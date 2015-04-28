@@ -1,1 +1,1 @@
-# {{ cookiecutter.site_name, }}
+# hodge init
