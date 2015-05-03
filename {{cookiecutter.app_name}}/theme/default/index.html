@@ -1,8 +1,15 @@
 <html>
 	<head>
-		<title>{% raw %}{{ config.title }}{% endraw %}</html>
+		<title>INDEX</html>
 	</head>
 	<body>
-		<h1>{% raw %}{{ config.title }}{% endraw %}</h1>
+		<h1>Index</h1>
+		<div id="content">
+			<ul>
+			{% for post in posts %}
+			<li>{{ post.meta.title }}</li>
+			{% endfor  %}
+			</ul>
+		</div>
 	</body>
 </html>
