@@ -1,14 +1,14 @@
 <html>
 	<head>
-		<title>INDEX</html>
+		<title>INDEX</title>
 	</head>
 	<body>
 		<h1>Index</h1>
 		<div id="content">
 			<ul>
-			{% for post in posts %}
-			<li>{{ post.meta.title }}</li>
-			{% endfor  %}
+				{% for post in posts %}
+				<li><a href="{{ post.meta.uri }}">{{ post.meta.title }}</a></li>
+				{% endfor  %}
 			</ul>
 		</div>
 	</body>
