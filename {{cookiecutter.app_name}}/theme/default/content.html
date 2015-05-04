@@ -1,11 +1,11 @@
 <html>
 	<head>
-		<title>{{ meta.title }}</title>
+		<title>{% raw %}{{ meta.title }}{% endraw %}</title>
 	</head>
 	<body>
-		<h1>{{ meta.title }}</h1>
+		<h1>{% raw %}{{ meta.title }}{% endraw %}</h1>
 		<div id="content">
-			{{ content|safe }}
+			{% raw %}{{ content|safe }}{% endraw %}
 		</div>
 	</body>
 </html>

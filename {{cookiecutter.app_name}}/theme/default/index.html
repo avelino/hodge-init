@@ -6,9 +6,9 @@
 		<h1>Index</h1>
 		<div id="content">
 			<ul>
-				{% for post in posts %}
+				{% raw %}{% for post in posts %}
 				<li><a href="{{ post.meta.uri }}">{{ post.meta.title }}</a></li>
-				{% endfor  %}
+				{% endfor  %}{% endraw %}
 			</ul>
 		</div>
 	</body>
